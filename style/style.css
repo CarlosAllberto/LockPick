@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor1: #4B71BF;
+    --cor2: #49668C;
+    --cor3: #30CFF2;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+    background-image: url("https://www.jetecommerce.com.br/wp-content/uploads/2020/01/aa-1024x512.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 65%;
+    background-clip: unset;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    color: rgb(29, 29, 29);
+    color: white;
+    padding: .5rem 0;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.150);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.150);
+    padding: 0 10px;
+}
+
+header a:hover {
+    transition: .2s;
+    color: var(--cor1);
+}
+
+header img {
+    width: 80px;
+    margin: -20px;
+    padding-right: 20px;
+}
+
+a.logo {
+    display: flex;
+}
+
+.cabeçalho {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navbar {
+    margin: auto;
+    display: inline;
+}
+
+main {
+    padding: 0 3rem;
+}
+
+div#inicial {
+    height: 300px;
+    width: 800px;
+    display: block;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    padding-top: 15%;
+}
+
+.conteudo {
+    width: 200px;
+    height: 150px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    padding: 100px 20px 0 20px; 
+    margin: 5px;
+    text-align: center;
+}
+
+.conteudo:hover {
+    transition: .5s;
+    transform: translateY(-10px);
+}
+
+.conteudo p {
+    text-align: justify;
+}
+
+.conteudo .imagem {
+    width: 100px;
+    height: 100px;
+    background-color: var(--cor1);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.200);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 45px;
+}
+
+.conteudo i {
+    font-size: 45px;
+    display: block;
+    padding-top: 25px;
+}
+
+div#segunda {
+    padding-top: 100px;
+    width: 800px;
+    margin: auto;
+}
+
+.destaque {
+    font-size: 1.3em;
+    color: var(--cor1);
+}

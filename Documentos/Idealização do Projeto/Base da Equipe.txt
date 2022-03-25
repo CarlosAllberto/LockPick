@@ -1,0 +1,21 @@
+Base da equipe inicial/teórica do projeto, a equipe, quantia de membros, e suas funções podem mudar de acordo com o passar do tempo, necessidade, nossa vontade, ou outros fatores.
+
+1. Desenvolvedor:
+
+_Aqui temos a pessoa responsável por todo desenvolvimento Web, sistema de buscas e navegação, desing e estética do site, e será o responsável por todos os sistemas._
+
+2. Publicitário:
+
+_Responsável pelo marketing e propagandas, redes sociais, e mídias da empresa, essa é a pessoa responsável pela visão pública da empresa._
+
+3. Vendedor:
+
+_Essa pessoa será responsável por dar todo o suporte e ajuda necessária ao usuário final, e será o responsável por garantir as vendas e lucro de todos._
+
+4. Administrador:
+
+_Responsável por gerenciar e controlar tudo, monitorar o trabalho dos outros membros, tomar decisões, gerenciar domínio, CNPJ, e outros detalhes importantes da empresa._
+
+5. Representante:
+
+Pra finalizar, nosso representante será a pessoa responsável por aparecer publicamente em nome de nossa empresa, será quem irá aparecer em nossas propagandas, canais de divulgação, e cursos, será o rosto humano de nossa empresa.
