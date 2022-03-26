@@ -9,10 +9,26 @@
     --cor3: #30CFF2;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor3);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fcfcfc;
+}
+
 body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(29, 29, 29);
+    background-color: #fcfcfc;
     background-image: url("https://www.jetecommerce.com.br/wp-content/uploads/2020/01/aa-1024x512.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -24,10 +40,9 @@ body {
 
 header {
     width: 100%;
-    background-color: rgb(29, 29, 29);
-    color: rgb(29, 29, 29);
+    background-color: var(--cor1);
     color: white;
-    padding: .5rem 0;
+    padding: .7rem 0;
 }
 
 header h1 {
@@ -45,7 +60,7 @@ header a {
 
 header a:hover {
     transition: .2s;
-    color: var(--cor1);
+    color: var(--cor3);
 }
 
 header img {
@@ -89,7 +104,9 @@ div#inicial {
 .conteudo {
     width: 200px;
     height: 150px;
-    background-color: rgb(39, 39, 39);
+    background-color: white;
+    color: rgb(24, 24, 24);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.100);
     border-radius: 5px;
     padding: 100px 20px 0 20px; 
     margin: 5px;
@@ -120,9 +137,10 @@ div#inicial {
     font-size: 45px;
     display: block;
     padding-top: 25px;
+    color: white;
 }
 
-div#segunda {
+div#destaque {
     padding-top: 100px;
     width: 800px;
     margin: auto;
@@ -131,4 +149,54 @@ div#segunda {
 .destaque {
     font-size: 1.3em;
     color: var(--cor1);
+}
+
+footer {
+    color: rgb(24, 24, 24);
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+footer h3 {
+    padding-bottom: 20px;
+}
+
+footer hr.divisão {
+    margin-bottom: 1rem;
+}
+
+.flex2 {
+    display: flex;
+    margin: auto;
+    width: 900px;
+}
+
+.flex2 div {
+    padding: 0 40px;
+}
+
+footer input {
+    border: 1px solid var(--cor1);
+    border-left: 5px solid var(--cor1);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+footer button {
+    background-color: var(--cor1);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+footer i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer i:hover {
+    color: var(--cor3);
 }
