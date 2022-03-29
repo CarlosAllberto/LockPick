@@ -26,14 +26,12 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: #fcfcfc;
     background-image: url("https://www.jetecommerce.com.br/wp-content/uploads/2020/01/aa-1024x512.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 65%;
-    background-clip: unset;
+    background-size: 100% 70vh;
+    background-blend-mode: darken;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -66,7 +64,7 @@ header a:hover {
 header img {
     width: 80px;
     margin: -20px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 a.logo {
@@ -87,6 +85,10 @@ a.logo {
 
 main {
     padding: 0 3rem;
+}
+
+main h2 {
+    color: var(--cor1);
 }
 
 div#inicial {
@@ -140,21 +142,62 @@ div#inicial {
     color: white;
 }
 
-div#destaque {
+section {
     padding-top: 100px;
     width: 800px;
     margin: auto;
 }
 
-.destaque {
+section p {
     font-size: 1.3em;
     color: var(--cor1);
+}
+
+#produtos {
+    width: 100%;
+    margin: auto;
+}
+
+.flexp {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    color: rgb(24, 24, 24);
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.100);
+}
+
+.item h3 {
+    padding-top: 15px;
+}
+
+.item:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+.item img {
+    width: 100%;
+}
+
+.frete {
+    color: rgb(13, 173, 66);
+    font-weight: bold;
+    padding-bottom: 15px;
 }
 
 footer {
     color: rgb(24, 24, 24);
     text-align: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
 }
 
 footer h3 {
@@ -162,7 +205,7 @@ footer h3 {
 }
 
 footer hr.divisão {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .flex2 {
@@ -199,4 +242,44 @@ footer i {
 
 footer i:hover {
     color: var(--cor3);
+}
+
+@media (max-width: 600px) {
+
+    header {
+        width: 98%;
+    }
+
+    .main {
+        padding: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #inicial {
+        width: 100%;
+    }
+
+    .flex {
+        display: block;
+        width: 100%;
+    }
+
+    .conteudo {
+        margin: auto;
+    }
+
+    #destaque{
+        width: 100%;
+    }
+
+    footer .flex2 {
+        display: block;
+    }
+
+    footer hr {
+        display: none;
+    }
 }
