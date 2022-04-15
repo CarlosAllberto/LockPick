@@ -4,282 +4,400 @@
 }
 
 :root {
-    --cor1: #4B71BF;
-    --cor2: #49668C;
-    --cor3: #30CFF2;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--cor1);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--cor3);
-}
-
-::-webkit-scrollbar-track {
-    background-color: #fcfcfc;
+    --texto: rgb(253, 255, 233);
+    --azul: rgb(28, 148, 179);
 }
 
 body {
-    background-color: #fcfcfc;
-    background-image: url("https://www.jetecommerce.com.br/wp-content/uploads/2020/01/aa-1024x512.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 70vh;
-    background-blend-mode: darken;
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*--------------------------------------------- modo dark */
+body.dark {
+    background-color: rgb(29, 29, 29);
+}
+
+body.dark header {
+    background-color: black;
+}
+
+body.dark header i {
+    color: var(--azul);
+}
+
+body.dark footer {
+    background-color: black;
+}
+
+body.dark h2 {
+    color: white;
+}
+
+body.dark #bloco-2 .col {
+    box-shadow: 5px 5px 5px 7px rgba(109, 109, 109, 0.1);
+    background-color: rgb(73, 73, 73);
+}
+
+body.dark #bloco-4 p {
+    color: var(--texto);
+}
+
+body.dark #menu-burger {
+    background-color: black;
+}
+/*---------------------------------------- fim do modo dark */
 
 header {
+    background-color: rgb(44, 44, 49);
     width: 100%;
-    background-color: var(--cor1);
-    color: white;
-    padding: .7rem 0;
+    padding: .5rem 0;
 }
 
-header h1 {
-    color: white;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.150);
-}
-
-header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.150);
-    padding: 0 10px;
-}
-
-header a:hover {
-    transition: .2s;
-    color: var(--cor3);
-}
-
-header img {
-    width: 80px;
-    margin: -20px;
-    padding-right: 10px;
-}
-
-a.logo {
-    display: flex;
-}
-
-.cabeçalho {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.navbar {
-    margin: auto;
-    display: inline;
-}
-
-main {
-    padding: 0 3rem;
-}
-
-main h2 {
-    color: var(--cor1);
-}
-
-div#inicial {
-    height: 300px;
-    width: 800px;
-    display: block;
-    margin: auto;
-}
-
-.flex {
-    display: flex;
-    padding-top: 15%;
-}
-
-.conteudo {
-    width: 200px;
-    height: 150px;
-    background-color: white;
-    color: rgb(24, 24, 24);
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.100);
-    border-radius: 5px;
-    padding: 100px 20px 0 20px; 
-    margin: 5px;
-    text-align: center;
-}
-
-.conteudo:hover {
-    transition: .5s;
-    transform: translateY(-10px);
-}
-
-.conteudo p {
-    text-align: justify;
-}
-
-.conteudo .imagem {
-    width: 100px;
-    height: 100px;
-    background-color: var(--cor1);
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.200);
-    border-radius: 50%;
-    position: absolute;
-    margin-top: -140px;
-    margin-left: 45px;
-}
-
-.conteudo i {
-    font-size: 45px;
-    display: block;
-    padding-top: 25px;
-    color: white;
-}
-
-section {
-    padding-top: 100px;
-    width: 800px;
-    margin: auto;
-}
-
-section p {
-    font-size: 1.3em;
-    color: var(--cor1);
-}
-
-#produtos {
-    width: 100%;
-    margin: auto;
-}
-
-.flexp {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.item {
-    background-color: white;
-    border-radius: 5px;
-    width: 200px;
-    margin: 10px;
-    padding: 5px;
-    color: rgb(24, 24, 24);
-    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.100);
-}
-
-.item h3 {
-    padding-top: 15px;
-}
-
-.item:hover {
-    transition: .3s;
-    transform: translateY(-10px);
-}
-
-.item img {
-    width: 100%;
-}
-
-.frete {
-    color: rgb(13, 173, 66);
-    font-weight: bold;
-    padding-bottom: 15px;
-}
-
-footer {
-    color: rgb(24, 24, 24);
-    text-align: center;
-    padding: 1rem 1rem 3rem 1rem;
-}
-
-footer h3 {
-    padding-bottom: 20px;
-}
-
-footer hr.divisão {
-    margin-bottom: 3rem;
-}
-
-.flex2 {
-    display: flex;
+header .container {
     margin: auto;
     width: 900px;
 }
 
-.flex2 div {
-    padding: 0 40px;
+header .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-footer input {
-    border: 1px solid var(--cor1);
-    border-left: 5px solid var(--cor1);
+header .col {
+    margin: auto;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    margin: -10px;
+    filter: drop-shadow(1px 1px 3px rgb(28, 148, 179));
+}
+
+header a {
+    padding: 0 10px;
+}
+
+header a.active {
+    color: var(--azul);
+}
+
+header i {
+    color: yellow;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    top: 1rem;
+    cursor: pointer;
+}
+
+header div {
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+header a:hover {
+    text-decoration: underline var(--azul);
+    color: var(--texto);
+}
+
+/*--------------------------------------------- burger*/
+header .mobile {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#burger-on {
+    display: inline;
+    position: fixed;
+    right: 10px;
+    top: 1.5rem;
+    cursor: pointer;
+}
+
+#burger-on .col-1 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-on .col-2 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-on .col-3 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-off {
+    display: inline;
+    position: fixed;
+    right: 10px;
+    top: 1.5rem;
+    cursor: pointer;
+}
+
+#burger-off .col-1 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-off .col-2 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-off .col-3 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#menu-burger {
+    display: none;
+    background-color: rgb(44, 44, 49);
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding-top: 3rem;
+    position: fixed;
+    box-shadow: -200px -50px 100px rgba(0, 0, 0, 0.534);
+}
+
+#menu-burger .show {
+    display: block;
+}
+
+#menu-burger i {
+    padding-left: 1rem;
+    position: initial;
+}
+
+#menu-burger a {
+    display: block;
+    padding: 5px 20px;
+}
+/*--------------------------------------------- fim do burger*/
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+#bloco-1 {
+    background-image: url("https://mundodecursos.com.br/wp-content/uploads/2021/11/cursos-gratuitos-loja-virtual.webp");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 250px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom center;
+    font-size: 20px;
+    color: var(--texto);
+    padding-top: 2rem;
+    box-shadow: inset 0 -5px 7px rgba(0, 0, 0, 0.605);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.100);
+    padding-bottom: 5rem;
+}
+
+#bloco-1 strong {
+    color: var(--azul);
+    font-size: 4rem;
+}
+
+#bloco-2 {
+    padding-bottom: 5rem;
+}
+
+#bloco-2 a {
+    text-decoration: none;
+}
+
+#bloco-2 h2 {
+    text-align: center;
+    text-decoration: underline 1px;
+    padding: 2rem 0 1rem 0;
+}
+
+#bloco-2 .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+#bloco-2 .col {
     border-radius: 5px;
-    padding: 5px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
+    padding: 10px 20px;
+}
+
+#bloco-2 .col:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+#bloco-2 img {
+    width: 100%;
+    border-bottom: 1px solid var(--azul);
+}
+
+#bloco-2 p {
+    color: rgb(66, 168, 97);
+}
+
+#bloco-3 {
+    padding-bottom: 5rem;
+}
+
+#bloco-3 h2 {
+    text-align: center;
+    text-decoration: underline 1px;
+    padding: 2rem 0 1rem 0;
+}
+
+/*
+#carouselExampleIndicators {
+    background-color: var(--azul);
+    height: 300px;
+}
+
+#carouselExampleIndicators .carousel-item {
+    width: 300px;
+}
+*/
+
+#bloco-3 .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#bloco-3 .col {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
+    padding: 10px 20px;
     background-color: white;
 }
 
-footer button {
-    background-color: var(--cor1);
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bolder;
+#bloco-4 h2 {
+    text-align: center;
+    text-decoration: underline 1px;
+    padding: 2rem 0 1rem 0;
 }
 
-footer i {
-    font-size: 30px;
-    padding: 10px;
+#bloco-4 p {
+    padding: 20px 0;
+    width: 700px;
+    margin: auto;
+    text-align: justify;
 }
 
-footer i:hover {
-    color: var(--cor3);
+footer {
+    background-color: rgb(44, 44, 49);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: rgb(253, 255, 233);
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin-top: 3rem;
 }
 
-@media (max-width: 600px) {
+footer .logo-footer {
+    width: 80px;
+    margin: -10px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+}
 
-    header {
-        width: 98%;
-    }
+footer .container {
+    width: 500px;
+}
 
-    .main {
-        padding: none;
-    }
+footer a {
+    text-decoration: none;
+    color: var(--texto);
+}
 
-    .navbar {
+footer a:hover {
+    text-decoration: underline var(--azul);
+    color: var(--texto);
+}
+
+footer img {
+    margin: 30px 10px;
+    width: 30px;
+}
+
+footer a img:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+/*----------------------------------------------- resposividade */
+@media (max-width: 700px) {
+    header .container {
         display: none;
     }
-
-    #inicial {
-        width: 100%;
-    }
-
-    .flex {
+ 
+    header .mobile {
         display: block;
         width: 100%;
     }
 
-    .conteudo {
+    #bloco-1 {
+        background-size: auto auto;
+        background-position: center;
+    }
+
+    #bloco-2 .row {
+        display: block;
+    }
+
+    #bloco-2 .col {
+        width: 70%;
         margin: auto;
+        margin-bottom: 30px;
     }
 
-    #destaque{
+    #bloco-2 .col:hover {
+        transform: none;
+    }
+
+    #bloco-4 p {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    footer .container {
         width: 100%;
     }
 
-    footer .flex2 {
+    footer .row {
         display: block;
-    }
-
-    footer hr {
-        display: none;
     }
 }
