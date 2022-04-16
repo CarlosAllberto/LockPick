@@ -6,6 +6,7 @@
 :root {
     --texto: rgb(253, 255, 233);
     --azul: rgb(28, 148, 179);
+    --black: rgb(50, 50, 50);
 }
 
 body {
@@ -30,12 +31,21 @@ body.dark footer {
 }
 
 body.dark h2 {
-    color: white;
+    color: var(--texto);
+    text-decoration: underline .5px var(--texto);
 }
 
-body.dark #bloco-2 .col {
-    box-shadow: 5px 5px 5px 7px rgba(109, 109, 109, 0.1);
+body.dark h3 {
+    color: var(--texto);
+}
+
+body.dark #bloco-3 .col {
+    box-shadow: 5px 5px 7px rgba(28, 149, 179, 0.200);
     background-color: rgb(73, 73, 73);
+}
+
+body.dark #bloco-3 img {
+    border-bottom: .5px solid white;
 }
 
 body.dark #bloco-4 p {
@@ -44,6 +54,7 @@ body.dark #bloco-4 p {
 
 body.dark #menu-burger {
     background-color: black;
+    box-shadow: inset 0px 5px 7px rgba(28, 149, 179, 0.300);
 }
 /*---------------------------------------- fim do modo dark */
 
@@ -114,7 +125,7 @@ header .mobile {
 
 #burger-on {
     display: inline;
-    position: fixed;
+    position: absolute;
     right: 10px;
     top: 1.5rem;
     cursor: pointer;
@@ -179,13 +190,14 @@ header .mobile {
 #menu-burger {
     display: none;
     background-color: rgb(44, 44, 49);
-    width: 60%;
-    height: 100%;
-    right: 0;
+    width: 100%;
+    height: 400px;
     top: 0;
+    right: 0;
+    box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.400);
+    margin-top: 4.7rem;
     padding-top: 3rem;
-    position: fixed;
-    box-shadow: -200px -50px 100px rgba(0, 0, 0, 0.534);
+    position: absolute;
 }
 
 #menu-burger .show {
@@ -193,7 +205,7 @@ header .mobile {
 }
 
 #menu-burger i {
-    padding-left: 1rem;
+    padding-left: 1.2rem;
     position: initial;
 }
 
@@ -207,6 +219,19 @@ header .mobile {
     margin: auto;
 }
 
+p {
+    color: var(--black);
+}
+
+h2 {
+    color: var(--black);
+    text-decoration: underline .5px var(--black);
+}
+
+h3 {
+    color: var(--black);
+}
+
 #bloco-1 {
     background-image: url("https://mundodecursos.com.br/wp-content/uploads/2021/11/cursos-gratuitos-loja-virtual.webp");
     background-repeat: no-repeat;
@@ -216,11 +241,14 @@ header .mobile {
     background-attachment: fixed;
     background-position: bottom center;
     font-size: 20px;
-    color: var(--texto);
     padding-top: 2rem;
-    box-shadow: inset 0 -5px 7px rgba(0, 0, 0, 0.605);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.100);
-    padding-bottom: 5rem;
+    box-shadow: inset 0 -5px 7px rgba(0, 0, 0, 0.500);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.300);
+    margin-bottom: 5rem;
+}
+
+#bloco-1 p {
+    color: var(--texto);
 }
 
 #bloco-1 strong {
@@ -232,50 +260,8 @@ header .mobile {
     padding-bottom: 5rem;
 }
 
-#bloco-2 a {
-    text-decoration: none;
-}
-
 #bloco-2 h2 {
     text-align: center;
-    text-decoration: underline 1px;
-    padding: 2rem 0 1rem 0;
-}
-
-#bloco-2 .row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
-    padding-bottom: 30px;
-}
-
-#bloco-2 .col {
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
-    padding: 10px 20px;
-}
-
-#bloco-2 .col:hover {
-    transition: .3s;
-    transform: translateY(-10px);
-}
-
-#bloco-2 img {
-    width: 100%;
-    border-bottom: 1px solid var(--azul);
-}
-
-#bloco-2 p {
-    color: rgb(66, 168, 97);
-}
-
-#bloco-3 {
-    padding-bottom: 5rem;
-}
-
-#bloco-3 h2 {
-    text-align: center;
-    text-decoration: underline 1px;
     padding: 2rem 0 1rem 0;
 }
 
@@ -290,27 +276,67 @@ header .mobile {
 }
 */
 
-#bloco-3 .row {
+#bloco-2 .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-#bloco-3 .col {
+#bloco-2 .col {
     border-radius: 5px;
     box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
     padding: 10px 20px;
     background-color: white;
 }
 
+#bloco-3 {
+    padding-bottom: 5rem;
+}
+
+#bloco-3 a {
+    text-decoration: none;
+}
+
+#bloco-3 h2 {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+#bloco-3 .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+#bloco-3 .col {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
+    padding: 10px 20px;
+}
+
+#bloco-3 .col:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+#bloco-3 img {
+    width: 100%;
+    border-bottom: .5px solid var(--black);
+}
+
+#bloco-3 p {
+    color: rgb(66, 168, 97);
+}
+
 #bloco-4 h2 {
     text-align: center;
-    text-decoration: underline 1px;
     padding: 2rem 0 1rem 0;
 }
 
 #bloco-4 p {
-    padding: 20px 0;
+    color: var(--black);
+    padding: 0 0 20px 0;
     width: 700px;
     margin: auto;
     text-align: justify;
@@ -321,10 +347,13 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    color: rgb(253, 255, 233);
     text-align: center;
     padding: 1rem 0 1rem 0;
     margin-top: 3rem;
+}
+
+footer p {
+    color: var(--texto);
 }
 
 footer .logo-footer {
@@ -371,20 +400,26 @@ footer a img:hover {
 
     #bloco-1 {
         background-size: auto auto;
-        background-position: center;
+        background-position: top;
     }
 
-    #bloco-2 .row {
+    #carouselExampleIndicators img {
+        height: 200px;
+    }
+
+    #bloco-3 .row {
         display: block;
+        padding-bottom: 0;
+        padding: 0 2rem;
     }
 
-    #bloco-2 .col {
-        width: 70%;
+    #bloco-3 .col {
+        width: 100%;
         margin: auto;
         margin-bottom: 30px;
     }
 
-    #bloco-2 .col:hover {
+    #bloco-3 .col:hover {
         transform: none;
     }
 
